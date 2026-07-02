@@ -1,103 +1,80 @@
 # Safe Vibe Coding Kit — Free Sample
 
-**Control Cursor and Claude Code before they touch the wrong files.**
+### Control Cursor and Claude Code before they touch the wrong files.
 
-This repository contains a free sample from **Safe Vibe Coding Kit for Cursor & Claude Code** — a practical guardrail pack for non-coders, solo founders, and vibe coders using AI coding agents to build landing pages, MVPs, digital product sites, and small apps.
+Safe Vibe Coding Kit is a practical guardrail kit for non-coders using Cursor and Claude Code.  
+It helps prevent AI coding agents from editing protected files, pushing to GitHub, deploying too early, or making broad refactors without approval.
 
-👉 **Get the full kit on Gumroad:**  
-https://ginabloom46.gumroad.com/l/safe-vibe-coding-kit
+<p>
+  <a href="https://ginabloom46.gumroad.com/l/safe-vibe-coding-kit">
+    <img src="https://img.shields.io/badge/Get%20the%20Full%20Kit-Gumroad-orange?style=for-the-badge" alt="Get the Full Kit on Gumroad">
+  </a>
+  <img src="https://img.shields.io/badge/Built%20for-Cursor%20%26%20Claude%20Code-blue?style=for-the-badge" alt="Built for Cursor and Claude Code">
+  <img src="https://img.shields.io/badge/Free%20Sample-3%20Files-green?style=for-the-badge" alt="Free Sample">
+</p>
 
 ---
 
-## What This Free Sample Includes
+## Why this exists
 
-This free repo includes 3 sample files:
+AI coding agents are powerful.
 
-| File | What it helps with |
+But when you are a non-coder, one vague prompt can lead to problems like:
+
+- editing protected files
+- changing `package.json`
+- touching `.env` files
+- making broad refactors
+- pushing to GitHub too early
+- deploying before you approved the work
+- saying the task is complete without showing what changed
+
+This free sample gives you three simple guardrails you can add to your AI coding workflow.
+
+The principle is simple:
+
+> The AI proposes.  
+> The human approves.  
+> Dangerous commands do not run automatically.
+
+---
+
+## Free sample files
+
+| File | What it helps prevent |
 |---|---|
-| `03-no-touch-files-rule.md` | Protect sensitive files like `.env`, `package.json`, lockfiles, auth, payments, and deployment config |
-| `06-no-git-push-no-deploy-rule.md` | Stop AI agents from committing, pushing, deploying, or touching production without explicit approval |
-| `08-completion-report-template.md` | Make the AI agent report exactly what changed after every task |
-
-These are the core safety habits every non-coder should install before using Cursor, Claude Code, or similar AI coding agents.
+| [`03-no-touch-files-rule.md`](./03-no-touch-files-rule.md) | Prevents the AI from editing protected files without approval |
+| [`06-no-git-push-no-deploy-rule.md`](./06-no-git-push-no-deploy-rule.md) | Prevents accidental GitHub push or deployment steps |
+| [`08-completion-report-template.md`](./08-completion-report-template.md) | Forces the AI to report what changed before calling a task complete |
 
 ---
 
-## Who This Is For
+## Who this is for
 
-This is for you if:
+This kit is for:
 
-- You use Cursor or Claude Code but are not a professional developer
-- You build with AI and worry the agent might touch the wrong files
-- You have seen AI agents rewrite too much code, edit config files, or push/deploy too early
-- You want a safer, repeatable workflow for vibe coding
-- You teach AI coding workflows to clients, students, or teams
+- non-coders building with Cursor
+- solo founders using Claude Code
+- creators making landing pages, MVPs, and digital products
+- people using AI coding agents with GitHub or Vercel
+- anyone who wants safer AI-assisted coding workflows
 
----
+It is especially useful if you often say things like:
 
-## Why Guardrails Matter
-
-AI coding agents are powerful, but vague prompts can lead them to:
-
-- touch unrelated files
-- rewrite more code than needed
-- edit `package.json` or lockfiles
-- modify `.env` or secret files
-- run git commands without permission
-- deploy before you are ready
-- finish with “Done” without telling you what changed
-
-The goal of this kit is simple:
-
-> **The AI proposes. The human approves. The dangerous commands do not run automatically.**
+> “Don’t touch the wrong files.”  
+> “Don’t push to GitHub yet.”  
+> “Don’t deploy until I approve.”  
+> “Tell me exactly what you changed.”
 
 ---
 
-## Get The Full Kit
+## How to use the free sample
 
-The full paid kit includes 13 Markdown files:
+Copy the rules into your project instructions, `CLAUDE.md`, Cursor rules, or AI coding prompt before starting a task.
 
-- `README.md`
-- `00-start-here.md`
-- `01-claude-md-template.md`
-- `02-cursor-rules-template.md`
-- `03-no-touch-files-rule.md`
-- `04-plan-before-editing-prompt.md`
-- `05-no-broad-refactor-rule.md`
-- `06-no-git-push-no-deploy-rule.md`
-- `07-minimal-context-debugging-prompt.md`
-- `08-completion-report-template.md`
-- `09-agent-recovery-prompt.md`
-- `10-pre-deploy-checklist.md`
-- `bonus-non-coder-explanation-template.md`
+Example:
 
-👉 **Full kit:** https://ginabloom46.gumroad.com/l/safe-vibe-coding-kit
-
-Launch price: **$9**
-
----
-
-## How To Use The Free Sample
-
-1. Open the files in `free-samples/`.
-2. Copy the rules into your `CLAUDE.md`, Cursor rules, or AI coding session.
-3. Replace placeholders with your project-specific paths.
-4. Use the completion report template after every AI-assisted code change.
-5. Keep the no-git/no-deploy rule installed in every project.
-
----
-
-## Disclaimer
-
-This kit is designed to encourage safer AI coding workflows.  
-It does not guarantee that an AI agent will never make mistakes, break code, or ignore instructions.
-
-Always review changes, keep version control, and stay in control of git push, deploy, payment, auth, and database changes.
-
----
-
-## License
-
-Free sample files are provided for personal use and evaluation.
-
-Please do not resell, repackage, or republish the files as your own product.
+```txt
+Before editing any files, read and follow the no-touch files rule.
+Do not push to GitHub or deploy unless I explicitly approve it.
+When finished, use the completion report template.
